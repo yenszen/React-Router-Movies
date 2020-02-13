@@ -3,9 +3,10 @@ import axios from 'axios';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
+  const paramItemId = props.match.params.id;
  
   useEffect(() => {
-    const id = 1;
+    const id = paramItemId;
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 
